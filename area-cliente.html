@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Facin</title>
+    <link rel="stylesheet" href="area-cliente.css">
+</head>
+<body>
+  <div class="user-container">
+    <h2>Bem-vindo, [Nome do Usuário]</h2>
+    <p class="user-info">Email: usuario@exemplo.com</p>
+
+    <!-- Botões para seções da área do usuário -->
+    <button class="user-button" onclick="window.location.href='pedidos.html'">Histórico de Pedidos</button>
+    <button class="user-button" onclick="window.location.href='dados-pessoais.html'">Dados Pessoais</button>
+    <button class="user-button" onclick="window.location.href='configuracoes.html'">Configurações de Conta</button>
+   <!-- Novo botão para Gerenciar Endereços -->
+    <button class="user-button" onclick="window.location.href='enderecos.html'">Gerenciar Endereços</button>
+
+    <!-- Botão de logout -->
+    <button class="user-button logout-button" onclick="logout()">Sair da Conta</button>
+</div>
+</body>
