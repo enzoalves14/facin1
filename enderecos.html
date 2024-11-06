@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Facin</title>
+    <link rel="stylesheet" href="enderecos.css">
+</head>
+<body>
+  <div class="address-container">
+    <h2>Gerenciar Endereços</h2>
+
+    <!-- Formulário para adicionar novo endereço -->
+    <input type="text" id="address" placeholder="Endereço Completo" class="input-field">
+    <input type="text" id="city" placeholder="Cidade" class="input-field">
+    <input type="text" id="state" placeholder="Estado" class="input-field">
+    <input type="text" id="zip" placeholder="CEP" class="input-field">
+    <button class="button add-button" onclick="addAddress()">Adicionar Endereço</button>
+
+    <!-- Lista de endereços salvos -->
+    <div class="address-list" id="addressList">
+        <!-- Endereços serão exibidos aqui -->
+    </div>
+</div>
+  <script src="enderecos.js"></script>
+</body>
