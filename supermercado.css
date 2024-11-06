@@ -88,6 +88,77 @@
             background-color: #004d40;
         }
 
+       /* Estilo Geral do Botão */
+        .user-button {
+            display: inline-block;
+            padding: 12px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            color: #fff;
+            background-color: #00796b;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-button:hover {
+            background-color: #004d40;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Estilo do Botão de Voltar */
+        .back-button {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        .back-button svg {
+            width: 16px;
+            height: 16px;
+            fill: #fff;
+        }
+
+        /* Contêiner dos Botões no Topo */
+        .top-buttons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Botão de Voltar */
+        .back-button {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1em;
+        }
+
+        .back-button svg {
+            width: 16px;
+            height: 16px;
+            fill: #fff;
+        }
+
+        /* Botão de Seguir */
+        .follow-button {
+            background-color: #ff5722;
+        }
+
+        .follow-button:hover {
+            background-color: #e64a19;
+        }
+
+
         /* Banner Rotativo */
         .carousel-container {
             position: relative;
