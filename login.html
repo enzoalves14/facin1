@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Facin</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form action="dashboard.html" method="POST">
+        <input type="email" name="email" placeholder="Email" class="input-field" required>
+        <input type="password" name="password" placeholder="Senha" class="input-field" required>
+        <button onclick="window.location.href='index.html' type="submit" class="login-button">Entrar</button>
+    </form>
+    <a href="cadastro.html" class="register-link">Ainda não tem uma conta? Cadastre-se</a>
+    <!-- Botão Entrar sem Cadastro -->
+    <button onclick="window.location.href='index.html'" class="guest-button">Entrar sem Cadastro</button>
+</div>
+</body>
