@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Facin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Facin</div>
+    <div class="search-bar">
+        <input type="text" placeholder="Pesquisar...">
+    </div>
+    <div class="auth-buttons">
+        <!-- Botão de Login na Página Principal -->
+<button onclick="window.location.href='login.html'">Login</button>
+        <button onclick="window.location.href='cadastro.html'">Cadastro</button>
+      <button onclick="window.location.href='area-cliente.html'">Área do Cliente</button>
+    </div>
+</header>
+
+
+<!-- Barra de Notificação -->
+<div class="notification-bar">
+    Ofertas do Dia! Aproveite os melhores preços e descontos!
+</div>
+
+<div class="main-container">
+    
+    <!-- Área de Cupons de Desconto -->
+    <div class="coupon-section">
+        <h2>Cupons de Desconto</h2>
+
+        <!-- Cupom 1 -->
+        <div class="coupon">
+            <p><strong>10% OFF</strong> em compras acima de R$100</p>
+            <button class="apply-coupon" onclick="applyCoupon('10OFF')">Aplicar Cupom</button>
+        </div>
+
+        <!-- Cupom 2 -->
+        <div class="coupon">
+            <p><strong>FRETE GRÁTIS</strong> em pedidos acima de R$150</p>
+            <button class="apply-coupon" onclick="applyCoupon('FRETEGRATIS')">Aplicar Cupom</button>
+        </div>
+
+        <!-- Cupom 3 -->
+        <div class="coupon">
+            <p><strong>R$20 OFF</strong> na sua primeira compra</p>
+            <button class="apply-coupon" onclick="applyCoupon('PRIMEIRACOMPRA')">Aplicar Cupom</button>
+        </div>
+    </div>
+  
+<main>
+<div class="carousel-container">
+    <div class="carousel" id="carousel">
+        <div class="carousel-item">
+            <img src="produto1.jpg" alt="Produto 1">
+            <h3>Produto 1</h3>
+            <p>R$ 99,90</p>
+            <button class="add-to-cart" onclick="addToCart('Produto 1', 99.90)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="carousel-item">
+            <img src="produto2.jpg" alt="Produto 2">
+            <h3>Produto 2</h3>
+            <p>R$ 149,90</p>
+            <button class="add-to-cart" onclick="addToCart('Produto 2', 149.90)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="carousel-item">
+            <img src="produto3.jpg" alt="Produto 3">
+            <h3>Produto 3</h3>
+            <p>R$ 89,90</p>
+            <button class="add-to-cart" onclick="addToCart('Produto 3', 89.90)">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+    <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+    <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+</div>
+
+<!-- Carrinho -->
+<div class="cart" id="cart">
+    <h2>Carrinho de Compras</h2>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-total" id="cartTotal">Total: R$ 0,00</div>
+</div>
+</main>
+  
+   <!-- Carrossel de Supermercados Disponíveis -->
+    <div class="supermarket-carousel-container">
+        <div class="supermarket-carousel" id="supermarketCarousel">
+            <div class="supermarket-item">
+                <img src="supermercado1.jpg" alt="Supermercado 1">
+                <h3>Supermercado 1</h3>
+            </div>
+            <div class="supermarket-item">
+                <img src="supermercado2.jpg" alt="Supermercado 2">
+                <h3>Supermercado 2</h3>
+            </div>
+            <div class="supermarket-item">
+                <img src="supermercado3.jpg" alt="Supermercado 3">
+                <h3>Supermercado 3</h3>
+            </div>
+        </div>
+        <button class="carousel-button prev" onclick="prevSupermarket()">&#10094;</button>
+        <button class="carousel-button next" onclick="nextSupermarket()">&#10095;</button>
+    </div>
+
+</div>
+<!-- Footer -->
+<footer>
+    <!-- Links de navegação do footer -->
+    <div class="footer-links">
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#contato">Contato</a>
+        <a href="#politica">Política de Privacidade</a>
+        <a href="#ajuda">Ajuda</a>
+        <a href="#faq">FAQ</a>
+    </div>
+
+    <!-- Links para redes sociais -->
+    <div class="social-media">
+        <a href="https://facebook.com/facin" target="_blank" title="Facebook">📘</a>
+        <a href="https://instagram.com/facin" target="_blank" title="Instagram">📸</a>
+        <a href="https://twitter.com/facin" target="_blank" title="Twitter">🐦</a>
+        <a href="https://linkedin.com/company/facin" target="_blank" title="LinkedIn">🔗</a>
+    </div>
+
+    <p>&copy; 2024 Facin. Todos os direitos reservados.</p>
+</footer>
+
+   <script src="script.js"></script>
+</body>
