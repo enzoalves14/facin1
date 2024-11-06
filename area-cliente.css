@@ -1,0 +1,64 @@
+        /* Estilos gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container da Área do Usuário */
+        .user-container {
+            width: 100%;
+            max-width: 500px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .user-container h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .user-info {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* Botões da Área do Usuário */
+        .user-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #00796b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .user-button:hover {
+            background-color: #004d40;
+        }
+
+        /* Botão de logout */
+        .logout-button {
+            background-color: #dc3545;
+            margin-top: 20px;
+        }
+
+        .logout-button:hover {
+            background-color: #c82333;
+        }
