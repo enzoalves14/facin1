@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Facin</title>
+    <link rel="stylesheet" href="supermercado.css">
+</head>
+<body>
+  <!-- Header do Supermercado -->
+<div class="header">
+    <!-- Parte Esquerda: Imagem e Nome da Loja -->
+    <div class="header-left">
+        <img src="supermercado_perfil.jpg" alt="Perfil do Supermercado" class="profile-image">
+        <div class="store-name">Supermercado 1</div>
+    </div>
 
+    <!-- Barra de Busca -->
+    <div class="search-bar">
+        <input type="text" placeholder="Buscar produtos...">
+        <button>&#128269;</button> <!-- Ícone de lupa -->
+    </div>
+
+    <!-- Botão Seguir -->
+    <button class="follow-button">Seguir</button>
+</div>
+<!-- Container do Carrossel -->
+<div class="carousel-container">
+    <!-- Slides do Carrossel -->
+    <div class="carousel-slide" id="carousel-slide">
+        <div class="carousel-item" style="background-image: url('promo1.jpg');">Promoção 1</div>
+        <div class="carousel-item" style="background-image: url('promo2.jpg');">Promoção 2</div>
+        <div class="carousel-item" style="background-image: url('promo3.jpg');">Promoção 3</div>
+    </div>
+
+    <!-- Botões de Navegação -->
+    <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+    <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+
+    <!-- Indicadores de Slides -->
+    <div class="carousel-indicators" id="carousel-indicators">
+        <span class="carousel-indicator active" onclick="goToSlide(0)"></span>
+        <span class="carousel-indicator" onclick="goToSlide(1)"></span>
+        <span class="carousel-indicator" onclick="goToSlide(2)"></span>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Supermercado 1</h2>
+
+    <!-- Seção de Endereço -->
+    <div class="section">
+        <h3 class="section-title">Endereço</h3>
+        <p>Rua Exemplo, 123 - Cidade Exemplo, Estado</p>
+        <p>CEP: 12345-678</p>
+    </div>
+
+    <!-- Seção de Produtos -->
+    <div class="section">
+        <h3 class="section-title">Produtos Disponíveis</h3>
+        <div class="product-item">
+            <p><strong>Produto 1</strong> - R$ 19,99</p>
+        </div>
+        <div class="product-item">
+            <p><strong>Produto 2</strong> - R$ 25,49</p>
+        </div>
+        <div class="product-item">
+            <p><strong>Produto 3</strong> - R$ 15,75</p>
+        </div>
+    </div>
+
+    <!-- Seção de Banner -->
+    <div class="section banner-section">
+        <h3 class="section-title">Anúncios</h3>
+        <div class="banner">
+            <img src="banner1.jpg" alt="Banner 1">
+        </div>
+        <div class="banner">
+            <img src="banner2.jpg" alt="Banner 2">
+        </div>
+    </div>
+
+    <!-- Seção de Avaliações -->
+    <div class="section reviews-section">
+        <h3 class="section-title">Avaliações</h3>
+        <p class="rating">★★★★☆</p>
+    </div>
+
+    <!-- Seção de Comentários -->
+    <div class="section comments-section">
+        <h3 class="section-title">Comentários</h3>
+        <div class="comment-item">
+            <p class="comment-author">Maria S.</p>
+            <p>Ótimo atendimento e produtos frescos!</p>
+        </div>
+        <div class="comment-item">
+            <p class="comment-author">João P.</p>
+            <p>Preços excelentes e muita variedade!</p>
+        </div>
+    </div>
+</div>
+
+    <!-- Formulário para adicionar comentário -->
+    <div class="section comment-form">
+        <h3 class="section-title">Deixe seu Comentário</h3>
+        <textarea id="comment-input" rows="4" placeholder="Escreva seu comentário..."></textarea>
+        <button onclick="addComment()">Enviar Comentário</button>
+    </div>
+</div>
+  <script src="supermercado.js"></script>
+</body>
