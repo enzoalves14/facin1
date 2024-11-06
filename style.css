@@ -305,6 +305,43 @@ main{
         .carousel-button.next {
             right: 10px;
         }
+   /* Estilo do Botão Geral */
+        .user-button {
+            margin-top: 10px;
+            display: inline-block;
+            padding: 08px 10px;
+            font-size: 0,8em;
+            font-weight: bold;
+            color: #fff;
+            background-color: #00796b;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-button:hover {
+            background-color: #004d40;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .user-button:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Botão de Destaque para Promoções */
+        .user-button.promo {
+            background-color: #ff5722;
+        }
+
+        .user-button.promo:hover {
+            background-color: #e64a19;
+        }
 
         /* Footer */
         footer {
