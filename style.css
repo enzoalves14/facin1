@@ -75,15 +75,14 @@
 
     /* Estilo do ícone do menu hambúrguer */
     .hamburger-icon {
-      margin-right: 10px;
       display: none;
       cursor: pointer;
-      width: 20px;
+      width: 25px;
       height: 21px;
       position: relative;
       background: none;
       border: none;
-      margin-right: 5px;
+      margin-right: 15px;
     }
 
     /* Linhas do ícone do hambúrguer */
