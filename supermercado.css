@@ -69,6 +69,10 @@
             font-size: 1.2em;
             color: #00796b;
         }
+img{
+      height: 50px;
+      
+}
 
         /* Botão Seguir */
         .follow-button {
