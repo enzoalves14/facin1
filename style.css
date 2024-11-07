@@ -221,7 +221,7 @@
             background-color: #004d40;
         }
 
-.main{
+main{
             width: 100%;
             max-width: 800px; /* Limita a largura para telas maiores */
             padding: 05px;
