@@ -7,14 +7,15 @@
 
         body {
             font-family: Arial, sans-serif;
+          overflow-x: hidden; /* Evita rolagem horizontal */
         }
 
         /* Header */
         header {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
-            padding: 10px 20px;
+            padding: 10px;
             background-color: red;
             color: #fff;
         }
@@ -27,15 +28,12 @@
 
         /* Barra de pesquisa */
         .search-bar {
-            flex-grow: 1;
-            display: flex;
-            justify-content: center;
-            margin: 0 15px;
+            flex: 1;
+            margin: 8px;
         }
 
         .search-bar input[type="text"] {
             width: 100%;
-            max-width: 400px;
             padding: 8px;
             border: none;
             border-radius: 4px;
@@ -60,7 +58,7 @@
             background-color: #777;
         }
 
-/* Estilos para o menu hambúrguer */
+    /* Estilos para o menu hambúrguer */
     /* Menu hambúrguer */
     .hamburger-menu {
       display: none;
@@ -124,9 +122,14 @@
       transform: rotate(-45deg);
       top: 10px;
     }
-
         /* Responsividade para dispositivos móveis */
         @media (max-width: 768px) {
+          
+            header{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            }
 
             .search-bar {
                 margin: 10px 5px;
@@ -135,6 +138,13 @@
             .auth-buttons {
                 justify-content: center;
             }
+          .auth-buttons {
+        display: none; /* Esconde os botões normais em telas pequenas */
+      }
+
+      .hamburger-icon {
+        display: block; /* Mostra o ícone do menu hambúrguer em telas pequenas */
+      }
         }
   /* Barra de notificação */
         .notification-bar {
@@ -146,6 +156,8 @@
             font-size: 1.2em;
             font-weight: bold;
         }
+
+
 
         /* Área de Cupons de Desconto */
         .coupon-section {
@@ -197,7 +209,7 @@
             background-color: #004d40;
         }
 
-main{
+.main{
             width: 100%;
             max-width: 800px; /* Limita a largura para telas maiores */
             padding: 05px;
@@ -366,7 +378,7 @@ main{
         .carousel-button.next {
             right: 10px;
         }
-   /* Estilo do Botão Geral */
+    /* Estilo do Botão Geral */
         .user-button {
             margin-top: 10px;
             display: inline-block;
