@@ -72,7 +72,20 @@
       padding: 8px;
       border-radius: 5px;
     }
-
+  /* Animação dos botões do menu */
+    .hamburger-menu button {
+      padding: 10px;
+      border: none;
+      background-color: red;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 5px 10px rgba(0, 123, 255, 0.5);
+    }
+.hamburger-menu button:hover{
+  background-color: white;
+  color: red;
+}
     /* Estilo do ícone do menu hambúrguer */
     .hamburger-icon {
       display: none;
