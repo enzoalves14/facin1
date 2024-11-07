@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+<header>
     <div class="logo">Facin</div>
     <div class="search-bar">
         <input type="text" placeholder="Pesquisar...">
     </div>
-    <div class="auth-buttons">
+      <div class="auth-buttons">
         <!-- Botão de Login na Página Principal -->
 <button onclick="window.location.href='login.html'">Login</button>
         <button onclick="window.location.href='cadastro.html'">Cadastro</button>
-      <button onclick="window.location.href='area-cliente.html'">Área do Cliente</button>
+      <button onclick="window.location.href='#area-cliente'">Área do Cliente</button>
     </div>
-        <!-- Ícone do Menu Hambúrguer -->
+  <!-- Ícone do Menu Hambúrguer -->
   <!-- Ícone do Menu Hambúrguer -->
   <button class="hamburger-icon" onclick="toggleMenu()">
     <span></span>
@@ -35,6 +35,7 @@
 </header>
 
 
+
 <!-- Barra de Notificação -->
 <div class="notification-bar">
     Ofertas do Dia! Aproveite os melhores preços e descontos!
@@ -42,28 +43,13 @@
 
 <div class="main-container">
     
-    <!-- Área de Cupons de Desconto -->
-    <div class="coupon-section">
-        <h2>Cupons de Desconto</h2>
-
-        <!-- Cupom 1 -->
-        <div class="coupon">
-            <p><strong>10% OFF</strong> em compras acima de R$100</p>
-            <button class="apply-coupon" onclick="applyCoupon('10OFF')">Aplicar Cupom</button>
-        </div>
-
-        <!-- Cupom 2 -->
-        <div class="coupon">
-            <p><strong>FRETE GRÁTIS</strong> em pedidos acima de R$150</p>
-            <button class="apply-coupon" onclick="applyCoupon('FRETEGRATIS')">Aplicar Cupom</button>
-        </div>
-
-        <!-- Cupom 3 -->
-        <div class="coupon">
-            <p><strong>R$20 OFF</strong> na sua primeira compra</p>
-            <button class="apply-coupon" onclick="applyCoupon('PRIMEIRACOMPRA')">Aplicar Cupom</button>
-        </div>
-    </div>
+<!-- Carrinho -->
+<div class="cart" id="cart">
+    <h2>Carrinho de Compras</h2>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-total" id="cartTotal">Total: R$ 0,00</div>
+</div>
+</main>
   
 <main>
 <div class="carousel-container">
@@ -90,14 +76,30 @@
     <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
     <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
 </div>
+  
+    <!-- Área de Cupons de Desconto -->
+    <div class="coupon-section">
+        <h2>Cupons de Desconto</h2>
 
-<!-- Carrinho -->
-<div class="cart" id="cart">
-    <h2>Carrinho de Compras</h2>
-    <div class="cart-items" id="cartItems"></div>
-    <div class="cart-total" id="cartTotal">Total: R$ 0,00</div>
-</div>
-</main>
+        <!-- Cupom 1 -->
+        <div class="coupon">
+            <p><strong>10% OFF</strong> em compras acima de R$100</p>
+            <button class="apply-coupon" onclick="applyCoupon('10OFF')">Aplicar Cupom</button>
+        </div>
+
+        <!-- Cupom 2 -->
+        <div class="coupon">
+            <p><strong>FRETE GRÁTIS</strong> em pedidos acima de R$150</p>
+            <button class="apply-coupon" onclick="applyCoupon('FRETEGRATIS')">Aplicar Cupom</button>
+        </div>
+
+        <!-- Cupom 3 -->
+        <div class="coupon">
+            <p><strong>R$20 OFF</strong> na sua primeira compra</p>
+            <button class="apply-coupon" onclick="applyCoupon('PRIMEIRACOMPRA')">Aplicar Cupom</button>
+        </div>
+    </div>
+
   
 <!-- Carrossel de Supermercados Disponíveis -->
 <div class="supermarket-carousel-container">
@@ -120,6 +122,8 @@
     </div>
     <button class="carousel-button prev" onclick="prevSupermarket()">&#10094;</button>
     <button class="carousel-button next" onclick="nextSupermarket()">&#10095;</button>
+</div>
+
 </div>
 <!-- Footer -->
 <footer>
