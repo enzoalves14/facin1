@@ -69,3 +69,13 @@
     function prevSupermarket() {
         showSupermarket(currentSupermarket - 1);
     }
+
+  // Função para abrir e fechar o menu hambúrguer
+function toggleMenu() {
+    const menu = document.getElementById("hamburgerMenu");
+    const icon = document.querySelector(".hamburger-icon");
+
+    // Alterna o menu e o estilo do ícone
+    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    icon.classList.toggle("open");
+  }
