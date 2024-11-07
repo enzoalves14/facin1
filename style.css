@@ -75,6 +75,7 @@
 
     /* Estilo do ícone do menu hambúrguer */
     .hamburger-icon {
+      margin-right: 10px;
       display: none;
       cursor: pointer;
       width: 20px;
@@ -87,7 +88,6 @@
 
     /* Linhas do ícone do hambúrguer */
     .hamburger-icon span {
-      margin-right: 2px;
       position: absolute;
       width: 100%;
       height: 4px;
