@@ -127,14 +127,9 @@
 
         /* Responsividade para dispositivos móveis */
         @media (max-width: 768px) {
-            header {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
 
             .search-bar {
-                margin: 10px 0;
+                margin: 10px 5px;
             }
 
             .auth-buttons {
