@@ -60,11 +60,77 @@
             background-color: #777;
         }
 
+/* Estilos para o menu hambúrguer */
+    /* Menu hambúrguer */
+    .hamburger-menu {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      background-color: white;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+      padding: 8px;
+      border-radius: 5px;
+    }
+
+    /* Estilo do ícone do menu hambúrguer */
+    .hamburger-icon {
+      display: none;
+      cursor: pointer;
+      width: 20px;
+      height: 21px;
+      position: relative;
+      background: none;
+      border: none;
+      margin-right: 5px;
+    }
+
+    /* Linhas do ícone do hambúrguer */
+    .hamburger-icon span {
+      margin-right: 2px;
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background-color: white;
+      border-radius: 2px;
+      transition: 0.4s;
+    }
+
+    .hamburger-icon span:nth-child(1) {
+      top: 0;
+    }
+
+    .hamburger-icon span:nth-child(2) {
+      top: 10px;
+    }
+
+    .hamburger-icon span:nth-child(3) {
+      top: 20px;
+    }
+
+    /* Efeito de transformação ao abrir o menu */
+    .hamburger-icon.open span:nth-child(1) {
+      transform: rotate(45deg);
+      top: 10px;
+    }
+
+    .hamburger-icon.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger-icon.open span:nth-child(3) {
+      transform: rotate(-45deg);
+      top: 10px;
+    }
+
         /* Responsividade para dispositivos móveis */
         @media (max-width: 768px) {
             header {
-                flex-direction: column;
-                align-items: stretch;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
             }
 
             .search-bar {
