@@ -169,3 +169,34 @@ function toggleMenu() {
     const menu = document.getElementById("hamburgerMenu"); // Seleciona o menu
     menu.style.display = menu.style.display === "flex" ? "none" : "flex"; // Alterna entre mostrar e esconder
 }
+
+// Comentários
+
+// Seletores
+const commentForm = document.getElementById("comment-form");
+const commentInput = document.getElementById("comment-input");
+const commentsList = document.getElementById("comments-list");
+
+// Event Listener para o Formulário
+commentForm.addEventListener("submit", function (e) {
+    e.preventDefault(); // Previne o recarregamento da página
+
+    // Obtém o texto do comentário
+    const commentText = commentInput.value.trim();
+
+    // Valida se o texto não está vazio
+    if (commentText === "") {
+        alert("Por favor, escreva um comentário antes de enviar.");
+        return;
+    }
+
+    // Cria um novo item de comentário
+    const commentItem = document.createElement("li");
+    commentItem.textContent = commentText;
+
+    // Adiciona o comentário à lista
+    commentsList.appendChild(commentItem);
+
+    // Limpa o campo de entrada
+    commentInput.value = "";
+});
