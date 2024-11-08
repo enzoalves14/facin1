@@ -7,11 +7,67 @@
     <link rel="stylesheet" href="supermercado.css">
 </head>
 <body>
-  <!-- Header do Supermercado -->
+<header class="header">
+      <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+        <h1>Minha Loja</h1>
+        <!-- Ícone do carrinho -->
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒<span id="cart-count">0</span>
+        </div>
+    </header>
+<!-- Menu Hamburguer (oculto por padrão) -->
+<nav id="hamburgerMenu" class="hamburger-menu-content">
+    <ul>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</nav>
+
+  <!-- Produtos -->
+    <section class="products">
+        <div class="product">
+            <h2>Produto 1</h2>
+            <p>Preço: R$ 50</p>
+            <button onclick="addToCart('Produto 1', 50)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <h2>Produto 2</h2>
+            <p>Preço: R$ 30</p>
+            <button onclick="addToCart('Produto 2', 30)">Adicionar ao Carrinho</button>
+        </div>
+      <div class="product">
+            <h2>Produto 2</h2>
+            <p>Preço: R$ 30</p>
+            <button onclick="addToCart('Produto 2', 30)">Adicionar ao Carrinho</button>
+        </div>
+      <div class="product">
+            <h2>Produto 2</h2>
+            <p>Preço: R$ 30</p>
+            <button onclick="addToCart('Produto 2', 30)">Adicionar ao Carrinho</button>
+        </div>
+      <div class="product">
+            <h2>Produto 2</h2>
+            <p>Preço: R$ 30</p>
+            <button onclick="addToCart('Produto 2', 30)">Adicionar ao Carrinho</button>
+        </div>
+      <div class="product">
+            <h2>Produto 2</h2>
+            <p>Preço: R$ 30</p>
+            <button onclick="addToCart('Produto 2', 30)">Adicionar ao Carrinho</button>
+        </div>
+      <div class="product">
+            <h2>Produto 2</h2>
+            <p>Preço: R$ 30</p>
+            <button onclick="addToCart('Produto 2', 30)">Adicionar ao Carrinho</button>
+        </div>
+      <div class="product">
+            <h2>Produto 2</h2>
+            <p>Preço: R$ 30</p>
             <button onclick="addToCart('Produto 2', 30)">Adicionar ao Carrinho</button>
         </div>
     </section>
-​
+
     <!-- Carrossel de Anúncios -->
     <section class="ad-carousel-container">
         <div id="ad-carousel" class="ad-carousel">
@@ -24,7 +80,7 @@
         </div>
         <div class="carousel-indicators" id="carousel-indicators"></div>
     </section>
-​
+
     <!-- Carrinho -->
     <div id="cart" class="cart">
         <button class="close-cart" onclick="toggleCart()">✖</button>
@@ -33,7 +89,7 @@
         <p id="cart-total">Total: R$ 0</p>
         <button onclick="checkout()">Finalizar Compra</button>
     </div>
-​
+
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-section">
