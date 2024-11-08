@@ -8,111 +8,50 @@
 </head>
 <body>
   <!-- Header do Supermercado -->
-<div class="header">
-    <!-- Parte Esquerda: Imagem e Nome da Loja -->
-    <div class="header-left">
-        <img src="supermercado_perfil.jpg" alt="Perfil do Supermercado" class="profile-image">
-        <div class="store-name">Supermercado 1</div>
-    </div>
-
-    <!-- Barra de Busca -->
-    <div class="search-bar">
-        <input type="text" placeholder="Buscar produtos...">
-        <button>&#128269;</button> <!-- Ícone de lupa -->
-    </div>
-
-    <!-- Botão Seguir -->
-    <button class="follow-button">Seguir</button>
-      <!-- Botão de Voltar para a Página Inicial -->
-<a href="index.html" class="user-button back-button">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H19v-2z"/></svg>
-    Voltar para Página Inicial
-</a>
-</div>
-<!-- Container do Carrossel -->
-<div class="carousel-container">
-    <!-- Slides do Carrossel -->
-    <div class="carousel-slide" id="carousel-slide">
-        <div class="carousel-item" style="background-image: url('banner1.png');">
-            <img src="banner1.png" alt="banner">
+            <button onclick="addToCart('Produto 2', 30)">Adicionar ao Carrinho</button>
         </div>
-        <div class="carousel-item" style="background-image: url('promo2.jpg');">Promoção 2</div>
-        <div class="carousel-item" style="background-image: url('promo3.jpg');">Promoção 3</div>
-    </div>
-
-    <!-- Botões de Navegação -->
-    <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
-    <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
-
-    <!-- Indicadores de Slides -->
-    <div class="carousel-indicators" id="carousel-indicators">
-        <span class="carousel-indicator active" onclick="goToSlide(0)"></span>
-        <span class="carousel-indicator" onclick="goToSlide(1)"></span>
-        <span class="carousel-indicator" onclick="goToSlide(2)"></span>
-    </div>
-</div>
-
-<div class="container">
-    <h2>Supermercado 1</h2>
-
-    <!-- Seção de Endereço -->
-    <div class="section">
-        <h3 class="section-title">Endereço</h3>
-        <p>Rua Exemplo, 123 - Cidade Exemplo, Estado</p>
-        <p>CEP: 12345-678</p>
-    </div>
-
-    <!-- Seção de Produtos -->
-    <div class="section">
-        <h3 class="section-title">Produtos Disponíveis</h3>
-        <div class="product-item">
-            <p><strong>Produto 1</strong> - R$ 19,99</p>
+    </section>
+​
+    <!-- Carrossel de Anúncios -->
+    <section class="ad-carousel-container">
+        <div id="ad-carousel" class="ad-carousel">
+            <div class="ad-item">
+                <img src="anuncio1.jpg" alt="Anúncio 1">
+            </div>
+            <div class="ad-item">
+                <img src="anuncio2.jpg" alt="Anúncio 2">
+            </div>
         </div>
-        <div class="product-item">
-            <p><strong>Produto 2</strong> - R$ 25,49</p>
+        <div class="carousel-indicators" id="carousel-indicators"></div>
+    </section>
+​
+    <!-- Carrinho -->
+    <div id="cart" class="cart">
+        <button class="close-cart" onclick="toggleCart()">✖</button>
+        <h2>Itens no Carrinho</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: R$ 0</p>
+        <button onclick="checkout()">Finalizar Compra</button>
+    </div>
+​
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Sobre Nós</h4>
+            <p>Somos uma empresa dedicada a oferecer os melhores produtos e serviços para você.</p>
         </div>
-        <div class="product-item">
-            <p><strong>Produto 3</strong> - R$ 15,75</p>
+        <div class="footer-section">
+            <h4>Redes Sociais</h4>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Instagram">📸</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+            </div>
         </div>
     </div>
-
-    <!-- Seção de Banner -->
-    <div class="section banner-section">
-        <h3 class="section-title">Anúncios</h3>
-        <div class="banner">
-            <img src="banner1.jpg" alt="Banner 1">
-        </div>
-        <div class="banner">
-            <img src="banner2.jpg" alt="Banner 2">
-        </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Minha Loja. Todos os direitos reservados.</p>
     </div>
-
-    <!-- Seção de Avaliações -->
-    <div class="section reviews-section">
-        <h3 class="section-title">Avaliações</h3>
-        <p class="rating">★★★★☆</p>
-    </div>
-
-    <!-- Seção de Comentários -->
-    <div class="section comments-section">
-        <h3 class="section-title">Comentários</h3>
-        <div class="comment-item">
-            <p class="comment-author">Maria S.</p>
-            <p>Ótimo atendimento e produtos frescos!</p>
-        </div>
-        <div class="comment-item">
-            <p class="comment-author">João P.</p>
-            <p>Preços excelentes e muita variedade!</p>
-        </div>
-    </div>
-</div>
-
-    <!-- Formulário para adicionar comentário -->
-    <div class="section comment-form">
-        <h3 class="section-title">Deixe seu Comentário</h3>
-        <textarea id="comment-input" rows="4" placeholder="Escreva seu comentário..."></textarea>
-        <button onclick="addComment()">Enviar Comentário</button>
-    </div>
-</div>
+</footer>
   <script src="supermercado.js"></script>
 </body>
