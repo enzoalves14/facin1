@@ -65,38 +65,69 @@
     </div>
 
 <main>
+    <!-- Carrinho -->
+<div class="cart" id="cart">
+    <h2>Lista de Compras</h2>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-total" id="cartTotal">Total: R$ 0,00</div>
+</div>
+    
 <div class="carousel-container">
     <div class="carousel" id="carousel">
         <div class="carousel-item">
             <img src="produto1.jpg" alt="Produto 1">
             <h3>Produto 1</h3>
             <p>R$ 99,90</p>
-            <button class="add-to-cart" onclick="addToCart('Produto 1', 99.90)">Adicionar ao Carrinho</button>
+            <button class="add-to-cart" onclick="addToCart('Produto 1', 99.90)">Adicionar à Lista de compras </button>
         </div>
         <div class="carousel-item">
             <img src="produto2.jpg" alt="Produto 2">
             <h3>Produto 2</h3>
             <p>R$ 149,90</p>
-            <button class="add-to-cart" onclick="addToCart('Produto 2', 149.90)">Adicionar ao Carrinho</button>
+            <button class="add-to-cart" onclick="addToCart('Produto 2', 149.90)">Adicionar à Lista de compras</button>
         </div>
         <div class="carousel-item">
             <img src="produto3.jpg" alt="Produto 3">
             <h3>Produto 3</h3>
             <p>R$ 89,90</p>
-            <button class="add-to-cart" onclick="addToCart('Produto 3', 89.90)">Adicionar ao Carrinho</button>
+            <button class="add-to-cart" onclick="addToCart('Produto 3', 89.90)">Adicionar à Lista de compras</button>
         </div>
     </div>
     <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
     <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
 </div>
-
-<!-- Carrinho -->
-<div class="cart" id="cart">
-    <h2>Carrinho de Compras</h2>
-    <div class="cart-items" id="cartItems"></div>
-    <div class="cart-total" id="cartTotal">Total: R$ 0,00</div>
-</div>
 </main>
+     <!-- Container principal para agrupar todo o conteúdo -->
+    <div class="container">
+        <!-- Cabeçalho com o título principal -->
+        <div class="header">
+            <h1>Escolha sua Categoria</h1>
+        </div>
+        
+        <!-- Seção de categorias com os cards -->
+        <section class="categories">
+            <!-- Card 1: Frutas -->
+            <div class="card">
+                <img src="frutas.jpg" alt="Frutas"> <!-- Imagem representando frutas -->
+                <h2>Frutas</h2> <!-- Título do card -->
+            </div>
+            <!-- Card 2: Bebidas -->
+            <div class="card">
+                <img src="bebidas.jpg" alt="Bebidas"> <!-- Imagem representando bebidas -->
+                <h2>Bebidas</h2> <!-- Título do card -->
+            </div>
+            <!-- Card 3: Laticínios -->
+            <div class="card">
+                <img src="laticinios.jpg" alt="Laticínios"> <!-- Imagem representando laticínios -->
+                <h2>Laticínios</h2> <!-- Título do card -->
+            </div>
+            <!-- Card 4: Outros -->
+            <div class="card">
+                <img src="outros.jpg" alt="Outros"> <!-- Imagem representando outras categorias -->
+                <h2>Mercado</h2> <!-- Título do card -->
+            </div>
+        </section>
+    </div>
 
 <!-- Carrossel de Supermercados Disponíveis -->
 <div class="supermarket-carousel-container">
