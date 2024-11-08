@@ -339,6 +339,59 @@ main{
             font-size: 0.9em;
 }
 
+/* Container principal */
+.container {
+    padding: 20px; /* Espaçamento interno para o conteúdo */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilização do cabeçalho */
+.container h1 {
+    font-size: 1.8rem; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    color: #333; /* Cor do texto do título */
+}
+
+/* Grade de categorias */
+.categories {
+    display: flex; /* Utiliza Flexbox para organizar os cards */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    gap: 15px; /* Espaçamento entre os cards */
+}
+
+/* Estilização de cada card */
+.card {
+    background: #fff; /* Fundo branco */
+    border-radius: 10px; /* Arredondamento dos cantos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para destaque */
+    text-align: center; /* Centraliza o texto dentro do card */
+    width: 45%; /* Largura padrão dos cards */
+    padding: 10px; /* Espaçamento interno no card */
+    overflow: hidden; /* Garante que conteúdo extra não "escape" do card */
+    transition: transform 0.3s; /* Animação suave ao passar o mouse */
+}
+
+/* Imagem dentro do card */
+.card img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do card */
+    border-radius: 10px 10px 0 0; /* Arredonda os cantos superiores da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Título dentro do card */
+.card h2 {
+    font-size: 1rem; /* Tamanho do texto do título */
+    margin: 10px 0; /* Espaço acima e abaixo do título */
+    color: #555; /* Cor do texto do título */
+}
+
+/* Efeito ao passar o mouse no card */
+.card:hover {
+    transform: scale(1.05); /* Aumenta o card ligeiramente */
+}
+
+
 /* Carrossel de Supermercados */
         .supermarket-carousel-container {
             width: 100%;
