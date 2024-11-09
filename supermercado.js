@@ -165,9 +165,14 @@ function setPositionByIndex() {
 // Inicializa o carrossel criando os indicadores
 createIndicators();
 
+// MENU HAMBURGUER
 function toggleMenu() {
-    const menu = document.getElementById("hamburgerMenu"); // Seleciona o menu
-    menu.style.display = menu.style.display === "flex" ? "none" : "flex"; // Alterna entre mostrar e esconder
+    const menu = document.getElementById("hamburgerMenu");
+    const hamburgerIcon = document.querySelector(".hamburger-menu");
+
+    // Alterna entre abrir/fechar o menu
+    menu.classList.toggle("open");
+    hamburgerIcon.classList.toggle("open");
 }
 
 // Comentários
