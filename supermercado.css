@@ -44,40 +44,66 @@ body {
     padding: 2px 6px;
 }
 
-/* Botão do Menu Hamburguer */
+
+/* Ícone do Menu Hambúrguer */
 .hamburger-menu {
-    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
     cursor: pointer;
-    padding: 5px 10px;
-    color: #fff; /* Ícone branco */
-    transition: background 0.3s ease, color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
-.hamburger-menu:hover {
-    background: rgba(255, 255, 255, 0.2); /* Fundo leve no hover */
-    color: #ff4500; /* Ícone laranja no hover */
-    border-radius: 5px;
+.hamburger-menu .line {
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+    transition: transform 0.3s ease, background 0.3s ease;
 }
 
-/* Menu Hamburguer (Oculto por Padrão) */
+/* Animação do Ícone */
+.hamburger-menu.open .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-menu.open .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.open .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Menu Hambúrguer */
 .hamburger-menu-content {
     display: none; /* Oculto inicialmente */
     position: absolute;
-    top: 60px; /* Abaixo do header */
+    top: 70px;
     left: 0;
     width: 100%;
-    background: #ffffff; /* Fundo branco */
-    color: #333; /* Texto escuro */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    background: #ffffff;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     padding: 10px 0;
     z-index: 999;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Estilo dos Links no Menu */
+.hamburger-menu-content.open {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Links do Menu */
 .hamburger-menu-content ul {
-    list-style: none; /* Remove marcadores */
-    margin: 0;
+    list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .hamburger-menu-content ul li {
@@ -86,16 +112,46 @@ body {
 }
 
 .hamburger-menu-content ul li a {
-    color: #0072ff; /* Azul vibrante */
-    text-decoration: none; /* Remove sublinhado */
+    color: #0072ff;
+    text-decoration: none;
     font-size: 1rem;
-    transition: color 0.3s ease, transform 0.2s ease;
+    transition: color 0.3s ease;
 }
 
 .hamburger-menu-content ul li a:hover {
-    color: #00c6ff; /* Azul claro no hover */
-    transform: translateX(5px); /* Leve deslocamento no hover */
+    color: #00c6ff;
 }
+
+/* Submenu */
+.has-submenu > .submenu {
+    display: none; /* Submenu oculto */
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.has-submenu:hover > .submenu {
+    display: block; /* Mostra o submenu ao passar o mouse */
+}
+
+/* Redes Sociais */
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: #0072ff;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #00c6ff;
+}
+
+
 
 
 /* Estilização do contêiner de produtos */
