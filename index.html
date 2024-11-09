@@ -33,35 +33,55 @@
             margin-bottom: 20px;
         }
         
-        #city-form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        
-        #city-select {
-            padding: 10px;
-            font-size: 1rem;
-            border: none;
-            border-radius: 5px;
-            background: #fff;
-            color: #333;
-        }
-        
-        #city-form button {
-            padding: 10px;
-            font-size: 1rem;
-            color: #fff;
-            background: #ff4500; /* Botão laranja */
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-        
-        #city-form button:hover {
-            background: #ff5722; /* Hover mais escuro */
-        }
+       /* Estilização do Formulário */
+#city-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#city-form label {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* Caixa de Seleção */
+#city-select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #0072ff;
+    border-radius: 5px;
+    background: #fff;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#city-select:focus {
+    border-color: #00c6ff;
+    box-shadow: 0 0 8px rgba(0, 198, 255, 0.5);
+}
+
+/* Botão de Confirmação */
+#city-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#city-form button:hover {
+    background: linear-gradient(135deg, #0056cc, #0072ff);
+    transform: scale(1.05);
+}
         </style>
 </head>
 <body>
