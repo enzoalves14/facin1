@@ -79,3 +79,15 @@ function toggleMenu() {
     menu.style.display = menu.style.display === "flex" ? "none" : "flex";
     icon.classList.toggle("open");
   }
+
+// Recupera a cidade do armazenamento local
+const userCity = localStorage.getItem("userCity");
+
+// Verifica se uma cidade foi escolhida
+if (userCity) {
+    // Exibe o nome da cidade no elemento designado
+    document.getElementById("user-city").innerText = userCity;
+} else {
+    // Se nenhuma cidade foi escolhida, redirecione para a tela inicial
+    window.location.href = "index.html";
+}
